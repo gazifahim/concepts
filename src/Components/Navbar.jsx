@@ -5,7 +5,7 @@ const MotionLink = motion(Link);
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="bg-white border-b  fixed top-0 left-0 right-0 z-50 shadow-sm">
+    <nav className="fixed top-0 left-0 w-full h-16 bg-white border-b z-50">
       
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
         

@@ -16,17 +16,19 @@ function App() {
     <>
       <Navbar />
 
-      <Suspense fallback={<Loader />}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/javascript-concepts" element={<JsConcept />} />
-          <Route path="/react-concepts" element={<ReactConcepts />} />
-          <Route path="/nextjs-concepts" element={<NextJsConcepts />} />
+      <main className="pt-16 pb-8">     
+        <Suspense fallback={<Loader />}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/javascript-concepts" element={<JsConcept />} />
+            <Route path="/react-concepts" element={<ReactConcepts />} />
+            <Route path="/nextjs-concepts" element={<NextJsConcepts />} />
 
-          {/* 404 route MUST be last */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Suspense>
+            {/* 404 route MUST be last */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Suspense>
+      </main>
 
       <Footer />
     </>
